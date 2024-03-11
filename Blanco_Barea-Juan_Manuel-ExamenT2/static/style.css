@@ -1,0 +1,81 @@
+body {
+
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-areas:
+        "paradas mapa";
+    grid-template-columns: 1fr 5fr;
+
+}
+
+#hecho {
+    position: fixed;
+    box-shadow: 0 0 4px 1px #ffc836;
+    z-index: 999;
+    background-color: #002858;
+    color: #ffc836;
+    border-radius: 10%;
+    top: 1rem;
+    right: 1rem;
+    padding: 2px;
+  
+    p#yo {
+        font-weight: bold;
+
+    }
+}
+
+div#mapa {
+    height: 100vh;
+    grid-area: mapa;
+
+}
+
+div#paradas {
+    grid-area: paradas;
+    width: 20rem;
+    overflow: scroll;
+    background-color: #ffc836;
+    overflow-y: scroll;
+    height: 100vh;
+
+    h1 {
+        background-color: #ffc836;
+        text-align: center;
+        padding: 10%;
+        margin: 0px;
+        color: #002858;
+        position: sticky;
+        top: 0px;
+    }
+
+    div.info {
+        color: #ffc836;
+        padding: 1rem;
+        text-align: left;
+        margin-top: 3px;
+        background-color: #002858;
+
+
+        div.nombre {
+            font-weight: bold;
+            padding: 1rem;
+        }
+
+        div.direccion {
+            padding: 1rem;
+        }
+        div.minusvalido{
+            padding: 1rem;
+        }
+    }
+
+    div#info:hover {
+        background-color: #ffc836;
+        color: #002858;
+
+    }
+
+
+}
